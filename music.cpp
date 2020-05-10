@@ -35,12 +35,13 @@ void Music::on_start_pause_clicked()
             qDebug()<<"No song found\n";
             return;
         }
-        //args << filename.at(0) << "&";
+        // args << filename.at(0) << "&";
         // mp->execute block other threads
-        //mp->startDetached("madplay", args);
+        // mp->startDetached("madplay", args);
         playMusic(0);
         started = true;
         is_playing = true;
+        ui->start_pause->setText(tr("Pause"));
     }
     else
     {
@@ -51,6 +52,7 @@ void Music::on_start_pause_clicked()
             p.waitForStarted();
             p.waitForFinished();
             is_playing = false;
+            ui->start_pause->setText(tr("Play"));
         }else          // resume songs
         {
             QProcess p(0);
@@ -58,6 +60,7 @@ void Music::on_start_pause_clicked()
             p.waitForStarted();
             p.waitForFinished();
             is_playing = true;
+            ui->start_pause->setText(tr("Pause"));
         }
     }
 }

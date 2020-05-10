@@ -1,4 +1,6 @@
 #include "util.h"
+
+
 bool GetFileFromPath(QString &path, QStringList suffix, QList<QString> &receiveList)
 {
     QDir *dir = new QDir(path);

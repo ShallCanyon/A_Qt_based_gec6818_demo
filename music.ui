@@ -37,12 +37,13 @@
     </property>
     <item>
      <widget class="QPushButton" name="prev">
-      <property name="text">
-       <string/>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+       </font>
       </property>
-      <property name="icon">
-       <iconset resource="res.qrc">
-        <normaloff>:/icon/res/prev.png</normaloff>:/icon/res/prev.png</iconset>
+      <property name="text">
+       <string>&lt;&lt;</string>
       </property>
       <property name="iconSize">
        <size>
@@ -63,13 +64,13 @@
         <height>38</height>
        </size>
       </property>
-      <property name="text">
-       <string/>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+       </font>
       </property>
-      <property name="icon">
-       <iconset resource="res.qrc">
-        <normaloff>:/icon/res/start.png</normaloff>
-        <normalon>:/icon/res/pause.png</normalon>:/icon/res/start.png</iconset>
+      <property name="text">
+       <string>Play</string>
       </property>
       <property name="iconSize">
        <size>
@@ -84,12 +85,13 @@
     </item>
     <item>
      <widget class="QPushButton" name="next">
-      <property name="text">
-       <string/>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+       </font>
       </property>
-      <property name="icon">
-       <iconset resource="res.qrc">
-        <normaloff>:/icon/res/next.png</normaloff>:/icon/res/next.png</iconset>
+      <property name="text">
+       <string>&gt;&gt;</string>
       </property>
       <property name="iconSize">
        <size>
@@ -134,16 +136,20 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>32</pointsize>
+     <pointsize>40</pointsize>
      <weight>75</weight>
      <bold>true</bold>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>
    </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
   </widget>
  </widget>
- <resources>
-  <include location="res.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

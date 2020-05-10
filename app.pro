@@ -17,7 +17,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     gallery.cpp \
-    led.cpp \
     main.cpp \
     mainwindow.cpp \
     music.cpp \
@@ -26,7 +25,6 @@ SOURCES += \
 
 HEADERS += \
     gallery.h \
-    led.h \
     mainwindow.h \
     music.h \
     screen.h \
@@ -34,7 +32,6 @@ HEADERS += \
 
 FORMS += \
     gallery.ui \
-    led.ui \
     mainwindow.ui \
     music.ui \
     screen.ui

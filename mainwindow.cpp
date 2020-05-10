@@ -7,11 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    led = new LED();
     music = new Music();
-    connect(led, &LED::finishRunning, this, &MainWindow::show);
     connect(music, &Music::finishRunning, this, &MainWindow::show);
-
 }
 
 MainWindow::~MainWindow()
@@ -28,12 +25,6 @@ void MainWindow::on_btn_screen_clicked()
     connect(scr, &Screen::finishRunning, this, &MainWindow::show);
     this->hide();
     scr->show();
-}
-
-void MainWindow::on_btn_led_clicked()
-{
-    this->hide();
-    led->show();
 }
 
 void MainWindow::on_btn_music_clicked()

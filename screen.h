@@ -1,10 +1,6 @@
 #ifndef SCREEN_H
 #define SCREEN_H
 
-#define TIMER_RED 1
-#define TIMER_GREEN 2
-#define TIMER_BLUE 3
-
 #include <QWidget>
 #include <QPushButton>
 #include <QDebug>
